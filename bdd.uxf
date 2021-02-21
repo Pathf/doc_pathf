@@ -1,0 +1,67 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>50</y><w>260</w><h>220</h></coordinates><panel_attributes>User  // 100 premier chiffre pour de la machine
+--
+_id : int_
+nameId : string
+psw : string
+
+name : string
+birthday : date
+mail : string (mail)
+
+description : text
+icon : oid
+
+accountCreation : date
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>710</y><w>170</w><h>100</h></coordinates><panel_attributes>Log
+--
+_id : int_
+type : character(1) // C R U D
+query : text
+iduser: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>490</y><w>170</w><h>130</h></coordinates><panel_attributes>Media
+--
+_id : int_
+name : string
+type media</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>490</y><w>170</w><h>120</h></coordinates><panel_attributes>Item
+--
+_id : int_
+idMedia : int
+properties: text
+? description: text
+? image: oid</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>40</y><w>170</w><h>140</h></coordinates><panel_attributes>Partie JDR
+--
+_id : int_
+
+nameJDR : string
+nameMj : string
+description : text
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>50</y><w>170</w><h>120</h></coordinates><panel_attributes>User &lt;=&gt; Partie
+--
+_idPartie : int_
+_idUser : int_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>310</y><w>170</w><h>120</h></coordinates><panel_attributes>User &lt;=&gt; Item
+--
+_idItem : int_
+_idUser : int_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>230</y><w>90</w><h>80</h></coordinates><panel_attributes>Fiche
+--
+_id : int_
+idPartie : int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>340</y><w>120</w><h>90</h></coordinates><panel_attributes>Fiche &lt;=&gt; properties
+--
+_idFiche : int_
+_idPropertie : int_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>340</y><w>170</w><h>90</h></coordinates><panel_attributes>Properties
+--
+_id : int_
+name : string
+valeur : string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>370</y><w>80</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;60;20</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>90</y><w>100</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;80;20;80;60</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>90</y><w>110</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>80</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;70;20</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>260</y><w>80</w><h>110</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;90;60;90</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>530</y><w>70</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>280</y><w>70</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;50;20;50;60</additional_attributes></element><element><id>Relation</id><coordinates><x>10</x><y>240</y><w>70</w><h>530</h></coordinates><panel_attributes></panel_attributes><additional_attributes>40;10;10;10;10;510;50;510</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>380</y><w>100</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes>80;10;10;10;10;160;40;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>150</y><w>100</w><h>80</h></coordinates><panel_attributes>Partie &lt;=&gt; Fiche
+--
+_idPartie : int_
+_idFiche : int_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>220</y><w>180</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes>160;10;160;50;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>200</y><w>170</w><h>120</h></coordinates><panel_attributes>User &lt;=&gt; Fiche
+--
+_idFiche : int_
+_idUser : int_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>230</y><w>90</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;70;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>250</y><w>110</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element></diagram>
